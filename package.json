@@ -1,0 +1,30 @@
+{
+  "name": "the_32emergency_32room",
+  "main": "main.js",
+  "productName": "The Emergency Room",
+  "description": "The Emergency Room",
+  "author": "Cousins of George",
+  "version": "1.0.0",
+  "dependencies": {
+    
+    "@electron/remote": "2.1.2"
+  },
+  "scripts": {
+    "start": "electron main.js",
+    "build": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "electron": "32.3.3",
+    "electron-builder": "26.4.0"
+  },
+  "build": {
+    "appId": "com.cousinsofgeorge.theer",
+    "extraFiles": [
+      "LICENSE.GDevelop.txt"
+    ],
+    "directories": {
+      "buildResources": "buildResources"
+    }
+  }
+}
